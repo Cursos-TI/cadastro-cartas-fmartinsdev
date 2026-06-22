@@ -39,20 +39,24 @@ int main() {
     scanf ( " %[^\n]", estado1);
  // Aplicado o comando " %[^\n]" para permitir a leitura de strings com espaços, garantindo que o nome COMPOSTO do estado seja capturado corretamente. (21/06/2026).
 
-    printf ("Digite o código da carta 1: \n");
+    printf ("Digite o código da carta 1 (01 até 08. Ex. - 03): \n");
     scanf ( "%s", &codigodacarta1);
  
+
     printf ("Digite a cidade da carta 1: \n");
-    scanf ( "%s", &cidade1);
+    scanf ( " %[^\n]", &cidade1);
+ // Aplicado o comando " %[^\n]", para ler cidades com nome composto. (21/06/2026).
 
     printf ("Digite a população da carta 1 (apenas números, sem pontos ou vírgulas. Ex: 320550): \n");
     scanf ( "%d", &populacao1);
+// Adicionado orientação de formato para a entrada da população, melhorando a experiência do usuário. (21/06/2026).
 
-    printf ("Digite a área da carta 1: \n");
+    printf ("Digite a área da carta 1 (apenas números, sem pontos ou vírgulas. Ex: 320550): \n");
     scanf ( "%f", &area1);
-
-    printf ("Digite o PIB da carta 1: \n");
+// Adicionado orientação de formato para a entrada da área, melhorando a experiência do usuário. (21/06/2026).
+    printf ("Digite o PIB da carta 1 (Apenas o número arredondado aproximado, ignorando a unidade e casa decimal. Ex. - 29,7 bi = 30 ): \n");
     scanf ( "%f", &pib1);
+// Adicionado orientação de formato para a entrada do PIB, facilitando a compreensão do usuário sobre como inserir os dados corretamente. (21/06/2026).
 
     printf ("Digite a quantidade de pontos turísticos da carta 1: \n");
     scanf ( "%d", &pontos_turisticos1);
