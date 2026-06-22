@@ -15,6 +15,17 @@ int main() {
     float area1;
     float pib1;
     int pontos_turisticos1;
+    // Caixa de Variáveis para a carta 1 Definida (21/06/2026).
+
+    // Variáveis para a carta 2:
+    char estado2 [20];
+    char codigodacarta2 [8];
+    char cidade2 [20];
+    int populacao2;
+    float area2;
+    float pib2;
+    int pontos_turisticos2;
+    // Caixa de Variáveis para a carta 2 Definida (21/06/2026).
 
 
   
