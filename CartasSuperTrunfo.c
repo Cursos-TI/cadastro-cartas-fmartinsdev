@@ -17,6 +17,7 @@ int main() {
     int pontos_turisticos1;
     // Caixa de Variáveis para a carta 1 Definida (21/06/2026).
 
+    
     // Variáveis para a carta 2:
     char codigodacarta2 [8];
     char estado2 [30];
@@ -28,7 +29,7 @@ int main() {
     // Caixa de Variáveis para a carta 2 Definida (21/06/2026).
 
 
-  // Área para entrada de dados carta 1
+    // Área para entrada de dados carta 1
 
     printf ("---Bem-Vindo ao Super Trunfo - Países! by TechNova---\n");
 
@@ -63,6 +64,15 @@ int main() {
 
     printf ("Parabéns! Você cadastrou a carta 1 com sucesso!\n \n");
 
+      
+  /* (13/07/2026) Desafio Aventureiro - Calculando PIB per Capita e Densidade Demográfica para a carta 1.
+   Vou utilizar a função "/" para dividir os valores de PIB e população, e população e área.
+  */
+
+  // (13/07/2026) Precisei ajustar a escala matemática para um cálculo mais preciso, multiplicando o PIB por "1000000000"
+    float pib_per_capita1 = (pib1 * 1000000000) / populacao1;
+    float densidade_demografica1 = populacao1 / area1;
+
 //Teste para exibir os dados da carta 1 cadastrada. 02/07/2026.
     printf (" Dados da Carta 1:\n");
     printf ("Código da Carta 1: %s\n", codigodacarta1);
@@ -72,10 +82,14 @@ int main() {
     printf ("Área da Carta 1: %.2f (km²)\n", area1);
     printf ("PIB da Carta 1: %.2f (Bilhões)\n", pib1);
     printf ("Quantidade de Pontos Turísticos da Carta 1: %d\n \n \n", pontos_turisticos1);
-
   // Área para entrada de dados da carta 1 Definida (21/06/2026).
+  // (13/07/2026) Desafio Aventureiro - Inserindo printf para exibir os cálculos de PIB per capita e dens. demog. da carta 1.
+   
+    printf ("PIB per Capita da Carta 1: %.2f (Aproximado) \n", pib_per_capita1);
+    printf ("Densidade Demográfica da Carta 1: %.2f (Habitantes por km²)\n \n \n", densidade_demografica1);
+    
 
-  // Área para entrada de dados carta 1
+  // Área para entrada de dados carta 2
 
     printf ("Vamos cadastrar a Segunda Carta do Super Trunfo - Países!\n \n");
     
@@ -102,6 +116,15 @@ int main() {
 
     printf ("Parabéns! Você cadastrou a carta 2 com sucesso!\n \n");
 
+     /* (13/07/2026) Desafio Aventureiro - Calculando PIB per Capita e Densidade Demográfica para a carta 2.
+   Vou utilizar a função "/" para dividir os valores de PIB e população, e população e área.
+  */
+
+  // (13/07/2026) Precisei ajustar a escala matemática para um cálculo mais preciso, multiplicando o PIB por "1000000000"
+    float pib_per_capita2 = (pib2 * 1000000000) / populacao2;
+    float densidade_demografica2 = populacao2 / area2;
+
+
         printf (" Dados da Carta 2:\n");
     printf ("Código da Carta 2: %s\n", codigodacarta2);
     printf ("Estado da Carta 2: %s\n", estado2);
@@ -111,9 +134,14 @@ int main() {
     printf ("PIB da Carta 2: %.2f (Bilhões)\n", pib2);
     printf ("Quantidade de Pontos Turísticos da Carta 2: %d\n \n \n", pontos_turisticos2);
 
-  // Área para exibição dos dados da cidade
+      // (13/07/2026) Desafio Aventureiro - Inserindo printf para exibir os cálculos de PIB per capita e dens. demog. da carta 1.
+   
+    printf ("PIB per Capita da Carta 2: %.2f (Aproximado) \n", pib_per_capita2);
+    printf ("Densidade Demográfica da Carta 2: %.2f (Habitantes por km²)\n \n \n", densidade_demografica2);
 
-
+// (13/07/2026) Finalização do Nivel Aventureiro - ENG de Software. 
+// (13/07/2026) Incluindo acima os cálculos de PIB per capita;
+// (13/07/2026) Densidade demográfica para as cartas cadastradas.
 
 
 return 0;
